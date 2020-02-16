@@ -1,0 +1,1 @@
+<template>    <div id="loading" v-show="isLoading">        Loading...    </div></template><script>    export default {        props:{            isLoading:{                type:Boolean,                required:true,            }        }    }</script>
