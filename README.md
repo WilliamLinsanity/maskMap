@@ -1,24 +1,24 @@
-# masks
+# 口罩即時存量地圖
 
-## Project setup
+## 使用技術：
 ```
-npm install
+Vue
 ```
-
-### Compiles and hot-reloads for development
 ```
-npm run serve
+Axios
 ```
-
-### Compiles and minifies for production
 ```
-npm run build
+Bootstrap Vue
 ```
-
-### Lints and fixes files
 ```
-npm run lint
+LeafLet
 ```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+```
+Sass-loader
+```
+```
+Reset-css
+```
+```
+Node-sass
+```
