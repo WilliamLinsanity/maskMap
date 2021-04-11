@@ -16,7 +16,6 @@
           sm="10"
           class="searchCounty"
           id="town"
-          @change="handleTown(selectedTown)"
           v-model="selectedTown"
           :options="cityList"
         />
@@ -139,7 +138,6 @@ export default {
       }
     },
     handleCountyChange(value) {
-      console.log(value);
       Object.values(this.countyList).forEach((item) => {
         if (value === item.value) {
           this.cityList = [];
@@ -151,19 +149,14 @@ export default {
         }
       });
     },
-    handleTown() {},
   },
   watch: {
     updatedData: {
       deep: true,
       handler() {
-        console.log(this.updatedData);
         if (this.updatedData.length) this.$emit("updated", this.updatedData);
       },
     },
-  },
-  mounted() {
-    console.log(this.selectedTown);
   },
   created() {
     this.handleCountry();
